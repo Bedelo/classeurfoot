@@ -8,14 +8,17 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">{{ folder }}</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card *ngFor="let t of team">
+    <ion-card-header collapse="condense">
+      <ion-label>{{t.nom | uppercase}}</ion-label>
+      <br />
+      <ion-label>Numéro: {{t.numero}}</ion-label>
+      <br />
+      <ion-label>Info: {{t.detail}}</ion-label>
+    </ion-card-header>
 
-  <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <ion-card-content>
+      <img src="{{t.img}}" alt="{{t.nom}}" width="25px " />
+    </ion-card-content>
+  </ion-card>
 </ion-content>
