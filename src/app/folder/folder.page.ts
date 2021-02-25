@@ -14,35 +14,59 @@ export class FolderPage implements OnInit {
       nom: 'mbappe',
       numero: '7',
       img: '/assets/profil_mbappe.png',
-      detail: '...',
+      detail: 'Attaquant',
     },
     {
       nom: 'neymar',
       numero: '10',
       img: '/assets/profil_neynmar.png',
-      detail: '...',
+      detail: 'Attaquant',
     },
     {
       nom: 'navas',
       numero: '1',
       img: '/assets/profile_navas.png',
-      detail: '...',
+      detail: 'Gardien',
     },
   ];
   public realTeam = [
     {
-      nom: 'mbappe',
-      numero: '7',
-      img: '/assets/profil_mbappe.png',
-      detail: '...',
+      nom: 'benzema',
+      numero: '9',
+      img: '/assets/benzema.jpg',
+      detail: 'Attaquant',
+    },
+    {
+      nom: 'modric',
+      numero: '10',
+      img: '/assets/modric.jpg',
+      detail: 'Attaquant',
+    },
+    {
+      nom: 'courtois',
+      numero: '1',
+      img: '/assets/courtois.jpg',
+      detail: 'Gardien',
     },
   ];
-  public omTeam = [
+  public fcbTeam = [
     {
-      nom: 'mbappe',
+      nom: 'messi',
+      numero: '10',
+      img: '/assets/messi.jpg',
+      detail: 'Attaquant',
+    },
+    {
+      nom: 'griezou',
       numero: '7',
-      img: '/assets/profil_mbappe.png',
-      detail: '...',
+      img: '/assets/griezou.jpg',
+      detail: 'Attaquant',
+    },
+    {
+      nom: 'pique',
+      numero: '3',
+      img: '/assets/pique.jpg',
+      detail: 'Defenseur',
     },
   ];
 
@@ -59,8 +83,8 @@ export class FolderPage implements OnInit {
         this.team = this.realTeam;
         console.log(this.team);
         break;
-      case 'OM':
-        this.team = this.omTeam;
+      case 'BARCA':
+        this.team = this.fcbTeam;
         console.log(this.team);
         break;
     }

@@ -8,7 +8,7 @@ export class AppComponent {
   public appPages = [
     { title: 'PSG', url: '/folder/PSG', icon: '/assets/psg.jpg' },
     { title: 'REAL', url: '/folder/REAL', icon: '/assets/real.jpg' },
-    { title: 'OM', url: '/folder/OM', icon: '/assets/om.jpg' }
+    { title: 'FCB', url: '/folder/BARCA', icon: '/assets/fcb.jpg' }
   ];
 
   constructor() {}
